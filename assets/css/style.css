@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime|Lato|Leckerli+One|Shojumaru&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0;
+}
+
+header,
+main,
+footer {
+	padding: 20px;
+	text-align: center;
+}
+
+header {
+	margin-bottom: 20px;
+	background-color: #36b5b0;
+	color: white;
+}
+
+header h1 {
+	font-family: "Leckerli One", cursive;
+	font-size: 4em;
+	transform: rotate(-10deg);
+	text-shadow: 3px 3px #9dd8c8;
+	transition: transform 2s;
+}
+
+header h1:hover {
+	transform: rotate(10deg);
+}
+
+footer {
+	background: #9dd8c8;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.instructions {
+	text-align: left;
+	width: 485px;
+	margin: 20px auto;
+}
+
+.intro img {
+	border-radius: 20px;
+	padding: 10px;
+	transition: transform 1s ease-out, box-shadow 1s ease-out;
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.intro img:hover {
+	transform: scale(1.02);
+	box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.instructions a:visited {
+	color: #36b5b0;
+}
+.instructions a:hover {
+	color: #f09595;
+}
+
+.editor {
+	font-size: 30px;
+	text-align: left;
+	padding: 1em;
+	font-family: "Courier Prime", monospace;
+}
+
+.editor div {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 0.5em;
+	padding: 1em 2em;
+	border-radius: 2em;
+}
+
+.editor div::after {
+	content: url("/assets/img/donut.png");
+	display: block;
+	text-align: right;
+	margin-top: 2em;
+}
+
+.editor div:last-child::after {
+	content: "";
+	text-align: center;
+	width: 100%;
+	height: 10px;
+	background-color: red;
+}
+
+.editor div:empty {
+	background-color: red;
+}
+
+.editor div:nth-child(even) {
+	background-color: #f09595;
+	color: #fff;
+}
+
+.editor div:nth-child(odd) {
+	background-color: #fcf5b0;
+	color: #000;
+}
+
+.editor div:first-letter {
+	font-size: 2.5em;
+	padding: 3px 10px;
+	border: 1px double;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-right: 0.2em;
+}
+
+.editor div:first-line {
+	line-height: 2;
+}
+
+.editor div:focus {
+	transform: scale(1.2);
+}
+
+.editor div {
+	text-indent: 2em;
+}
